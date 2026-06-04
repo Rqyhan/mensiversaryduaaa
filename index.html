@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Mensiversary Almira 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Halaman 1 - Hero/Landing -->
+    <div id="page1" class="page active">
+        <div class="hero-container">
+            <!-- Floating Hearts -->
+            <div class="hearts-container">
+                <div class="heart" style="--delay: 0s; --duration: 3s; --h-offset: 20%;"></div>
+                <div class="heart" style="--delay: 0.5s; --duration: 3.5s; --h-offset: 40%;"></div>
+                <div class="heart" style="--delay: 1s; --duration: 4s; --h-offset: 60%;"></div>
+                <div class="heart" style="--delay: 1.5s; --duration: 3.2s; --h-offset: 80%;"></div>
+                <div class="heart" style="--delay: 2s; --duration: 3.8s; --h-offset: 50%;"></div>
+            </div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">HAPPY MENSIVERSARY SAYANGGG</h1>
+                <p class="hero-subtitle">Untuk Almira 💖</p>
+                <button class="btn-next" onclick="goToPage(2)">Masuk ke halaman berikutnya</button>
+                <p class="watermark">by reyhan gunawan</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Halaman 2 - Gallery -->
+    <div id="page2" class="page">
+        <div class="gallery-container">
+            <!-- Header -->
+            <div class="gallery-header">
+                <button class="btn-back" onclick="goToPage(1)">← Kembali</button>
+                <h2>Kenang-kenangan Kita</h2>
+            </div>
+
+            <!-- Main Gallery -->
+            <div class="gallery-main">
+                <!-- Kolom Kiri - Photocards -->
+                <div class="gallery-cards">
+                    <div id="active-card-area"></div>
+                    <div class="card-navigation">
+                        <button class="nav-card prev-card" onclick="navigateCard(-1)">←</button>
+                        <button class="nav-card next-card" onclick="navigateCard(1)">→</button>
+                    </div>
+                    <div id="inactive-cards-scroll" class="photos-scroll-wrapper"></div>
+                </div>
+
+                <!-- Kolom Kanan - Description Panel -->
+                <div class="description-panel">
+                    <div class="description-content">
+                        <h3 id="desc-title">Pilih momen untuk melihat ceritanya</h3>
+                        <p id="desc-text">Setiap momen bersama Almira adalah anugerah yang berharga bagiku. Klik salah satu momen untuk membaca ceritanya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
